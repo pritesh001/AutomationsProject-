@@ -1,0 +1,15 @@
+package com.ctli.it.qa.taskmanager.tools.pages.common;
+
+import net.serenitybdd.core.annotations.findby.FindBy;
+import net.serenitybdd.core.pages.WebElementFacade;
+
+public class RequestidFalloutProvider extends TaskManagerHomePage {
+	
+	
+	
+	@FindBy(xpath="html/body/table[1]/tbody/tr[1]/td/table/tbody/tr[4]/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td/form[2]/table/tbody/tr[1]/td[1]/table[2]/tbody/tr[10]/td/input")
+	public WebElementFacade tbx_requestid;
+	
+	
+
+}

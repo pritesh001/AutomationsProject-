@@ -1,0 +1,15 @@
+package com.ctli.it.qa.taskmanager.tools.steps.pages;
+
+import com.ctl.it.qa.staf.Page;
+
+import net.serenitybdd.core.pages.WebElementFacade;
+
+public abstract class TaskManagerPage extends Page{
+
+	@Override
+	public WebElementFacade getUniqueElementInPage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

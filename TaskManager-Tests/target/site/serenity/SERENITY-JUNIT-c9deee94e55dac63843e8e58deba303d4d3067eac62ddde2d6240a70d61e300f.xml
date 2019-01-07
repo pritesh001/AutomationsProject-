@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Title of your feature" skipped="0" tests="1" time="363.04" timestamp="2017-04-100 12:18:42"><testcase name="Title of your scenario"><error message="Error communicating with the remote browser. It may have died.&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'XIN009ODAB56362', ip: '10.140.7.61', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_60'&#10;Driver info: driver.version: RemoteWebDriver&#10;Session ID: 9fbf42c1-a2c4-4cc4-be36-4c33a799b0f1&#10;Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.2}]&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'XIN009ODAB56362', ip: '10.140.7.61', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_60'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.remote.UnreachableBrowserException">Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'XIN009ODAB56362', ip: '10.140.7.61', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_60'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 9fbf42c1-a2c4-4cc4-be36-4c33a799b0f1
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.2}]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'XIN009ODAB56362', ip: '10.140.7.61', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_60'
+Driver info: driver.version: unknown</error><system-err>Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'XIN009ODAB56362', ip: '10.140.7.61', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_60'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 9fbf42c1-a2c4-4cc4-be36-4c33a799b0f1
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.2}]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'XIN009ODAB56362', ip: '10.140.7.61', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_60'
+Driver info: driver.version: unknown&#13;
+com.ctl.it.qa.staf.AutoPopulate.populateValueIntoElement(AutoPopulate.java:96)&#13;
+com.ctl.it.qa.staf.AutoPopulate.populateValues(AutoPopulate.java:46)&#13;
+com.ctl.it.qa.staf.Steps.fillFields(Steps.java:132)&#13;
+com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps.i_claim_socn(TaskManagerUserSteps.java:148)&#13;
+com.ctli.it.qa.taskmanager.tests.steps.user.TaskManagerUserStepsDefinition.i_complete_action_for_the_socn_claim_for_the_third_party_with_request_id(TaskManagerUserStepsDefinition.java:78)&#13;
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,12 @@
+package com.ctli.it.qa.taskmanager.tools.pages;
+
+import net.serenitybdd.core.pages.WebElementFacade;
+
+public class TaskManagerLoginPage extends TaskManagerPage{
+
+	@Override
+	public WebElementFacade getUniqueElementInPage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

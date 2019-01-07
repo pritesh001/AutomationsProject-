@@ -1,0 +1,51 @@
+<acceptance-test-run title="Title of your scenario" name="Title of your scenario" description="" steps="8" successful="5" failures="0" errors="1" skipped="2" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="363036" timestamp="2017-04-10T12:18:42.592+05:30" session-id="9fbf42c1-a2c4-4cc4-be36-4c33a799b0f1">
+  <user-story id="title-of-your-feature" name="Title of your feature" path="features/taskmanager.feature"/>
+  <tags>
+    <tag name="Title of your feature" type="feature"/>
+    <tag name="tag" type="tag"/>
+    <tag name="tag1" type="tag"/>
+  </tags>
+  <test-group name="Given I am logged in as a &quot;TaskManageruser&quot; in the Task Manager Portal" result="SUCCESS">
+    <test-step result="SUCCESS" duration="8748">
+      <description>Is in taskmanager login page: &lt;span class=&apos;step-parameter&apos;&gt;http://ctlcentral-itv.test.qintra.com/portal/site/qcentral/index.jsp?epi-content=LOGIN&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="6499">
+      <description>Logs in taskamanger as: &lt;span class=&apos;step-parameter&apos;&gt;TaskManageruser&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+  <test-group name="When I click on the Admin under that  fallouts the Fallout page should come" result="SUCCESS">
+    <test-step result="SUCCESS" duration="10287">
+      <description>I click on fallouts</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="74872">
+    <description>Then I complete action for the claim for the third party with request id</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="137848">
+    <description>Then I complete action for the complete for the third party with request id</description>
+  </test-step>
+  <test-group name="Then I complete action for the socn claim  for the third party with request id" result="ERROR">
+    <test-step result="ERROR" duration="2013">
+      <description>I claim socn</description>
+      <error>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;XIN009ODAB56362&apos;, ip: &apos;10.140.7.61&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 9fbf42c1-a2c4-4cc4-be36-4c33a799b0f1
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.2}]</error>
+      <exception>org.openqa.selenium.remote.UnreachableBrowserException:Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;XIN009ODAB56362&apos;, ip: &apos;10.140.7.61&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_60&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 9fbf42c1-a2c4-4cc4-be36-4c33a799b0f1
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=45.0.2}]&#xd;
+[com.ctl.it.qa.staf.AutoPopulate.populateValueIntoElement(AutoPopulate.java:96), com.ctl.it.qa.staf.AutoPopulate.populateValues(AutoPopulate.java:46), com.ctl.it.qa.staf.Steps.fillFields(Steps.java:132), com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps.i_claim_socn(TaskManagerUserSteps.java:148), com.ctli.it.qa.taskmanager.tests.steps.user.TaskManagerUserStepsDefinition.i_complete_action_for_the_socn_claim_for_the_third_party_with_request_id(TaskManagerUserStepsDefinition.java:78), org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86), org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38), org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459), org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675), org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382), org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)]</exception>
+    </test-step>
+  </test-group>
+  <test-step result="SKIPPED" duration="4">
+    <description>Then I complete action for the socn complete  for the third party with request id</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="2">
+    <description>Then I see the final status completed for both socn and focn</description>
+  </test-step>
+</acceptance-test-run>

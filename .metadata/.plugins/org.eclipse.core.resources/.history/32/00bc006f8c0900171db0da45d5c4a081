@@ -1,0 +1,40 @@
+package com.ctli.it.qa.taskmanager.tests.steps.user;
+
+import com.ctl.it.qa.staf.Page;
+import com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+import net.serenitybdd.core.Serenity;
+import net.thucydides.core.annotations.Steps;
+
+public class TaskManagerUserStepsDefinition {
+	
+	@Steps
+	TaskManagerUserSteps endUser;
+
+	@Given("^Given I am logged in as a \"([^\"]*)\" in the Task Manager Portal$")
+	public void given_I_am_logged_in_as_a_in_the_Task_Manager_Portal(String userType)
+	
+	{
+		
+		String url = Page.envData.getFieldValue("tm-url");
+		Serenity.setSessionVariable("url").to(url);
+		Serenity.setSessionVariable("user_type").to(userType);
+		endUser.is_in_taskmanager_login_page(url);
+	}
+
+	@Given("^some other precondition$")
+	public void some_other_precondition() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^I complete action$")
+	public void i_complete_action() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+	
+}

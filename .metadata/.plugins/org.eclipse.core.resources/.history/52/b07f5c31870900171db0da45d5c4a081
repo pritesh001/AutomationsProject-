@@ -1,0 +1,5 @@
+package com.ctli.it.qa.taskmanager.tools.pages;
+
+public abstract class TaskManagerLoginPage extends TaskManagerPage{
+
+}

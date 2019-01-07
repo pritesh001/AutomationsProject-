@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TaskManagerRunnerClass" project="TaskManager-Tests" tests="3" started="3" failures="0" errors="2" ignored="1">
+  <testsuite name="com.ctli.it.qa.taskmanager.tests.TaskManagerRunnerClass" time="90.522">
+    <testsuite name="Feature: Title of your feature" time="90.522">
+      <testsuite name="Scenario: Title of your scenario" time="88.238" incomplete="true">
+        <error>net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 30 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'XIN009ODAB56362', ip: '10.140.7.61', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_60'
+Driver info: driver.version: unknown&#13;
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:145)&#13;
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:93)&#13;
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:144)&#13;
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.sendKeys(WebElementFacadeImpl.java:1039)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:606)&#13;
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)&#13;
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps.i_clear_out_remaining_fields(TaskManagerUserSteps.java:71)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$743c32f8.CGLIB$i_clear_out_remaining_fields$5(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$743c32f8$$FastClassByCGLIB$$c12b4d7b.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)&#13;
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:248)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:123)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$743c32f8.i_clear_out_remaining_fields(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tests.steps.user.TaskManagerUserStepsDefinition.i_click_on_the_Admin_under_that_fallouts_the_Fallout_page_should_come(TaskManagerUserStepsDefinition.java:38)&#13;
+	at ✽.When I click on the Admin under that  fallouts the Fallout page should come(features/taskmanager.feature:9)&#13;
+&#13;
+</error>
+        <testcase name="Given I am logged in as a &quot;TaskManageruser&quot; in the Task Manager Portal" classname="Scenario: Title of your scenario" time="88.212"/>
+        <testcase name="When I click on the Admin under that  fallouts the Fallout page should come" classname="Scenario: Title of your scenario" time="0.025">
+          <error>net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 30 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'XIN009ODAB56362', ip: '10.140.7.61', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_60'
+Driver info: driver.version: unknown&#13;
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.ajaxFindElement(SmartAjaxElementLocator.java:145)&#13;
+	at net.thucydides.core.annotations.locators.SmartAjaxElementLocator.findElement(SmartAjaxElementLocator.java:93)&#13;
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:144)&#13;
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.sendKeys(WebElementFacadeImpl.java:1039)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.lang.reflect.Method.invoke(Method.java:606)&#13;
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)&#13;
+	at com.sun.proxy.$Proxy24.sendKeys(Unknown Source)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps.i_clear_out_remaining_fields(TaskManagerUserSteps.java:71)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$743c32f8.CGLIB$i_clear_out_remaining_fields$5(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$743c32f8$$FastClassByCGLIB$$c12b4d7b.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)&#13;
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:248)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:123)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$743c32f8.i_clear_out_remaining_fields(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tests.steps.user.TaskManagerUserStepsDefinition.i_click_on_the_Admin_under_that_fallouts_the_Fallout_page_should_come(TaskManagerUserStepsDefinition.java:38)&#13;
+	at ✽.When I click on the Admin under that  fallouts the Fallout page should come(features/taskmanager.feature:9)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then I complete action for the claim and complete for the third party with request id" classname="Scenario: Title of your scenario" time="2.273" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

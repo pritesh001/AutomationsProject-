@@ -1,0 +1,37 @@
+package com.ctli.it.qa.taskmanager.tools.steps.user;
+
+import com.ctli.it.qa.taskmanager.tools.steps.TaskManagerSteps;
+
+import net.thucydides.core.annotations.Step;
+
+@SuppressWarnings("serial")
+public class TaskManagerUserSteps extends TaskManagerSteps{
+
+	com.ctli.it.qa.taskmanager.tools.pages.common.TaskManagerLoginPage TaskManagerLoginPage;
+	
+	com.ctli.it.qa.taskmanager.tools.pages.common.TaskManagerHomePage  TaskManagerHomePage ;
+	
+	
+	@Step
+	public void is_in_taskmanager_login_page(String url) {
+		 
+		TaskManagerLoginPage.openAt(url);
+		 TaskManagerLoginPage.maximize();
+		// TaskManagerLoginPage.shouldExist(TaskManagerLoginPage);
+	}
+
+	@Step
+	public void logs_in_taskamanger_as(String userType) {
+		//TaskManagerLoginPage.shouldExist(TaskManagerLoginPage);
+		TaskManagerLoginPage.enterCredentials(userType);
+		TaskManagerLoginPage.btn_log_In_taskamanager.click();
+		//TaskManagerHomePage.shouldExist(TaskManagerHomePage);
+	}
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,9 @@
+package SDPOrderingOALoginPage;
+
+import com.ctli.it.qa.taskmanager.tools.pages.TaskManagerPage;
+
+public class TaskManagerLoginPage  extends TaskManagerPage 
+
+{
+
+}

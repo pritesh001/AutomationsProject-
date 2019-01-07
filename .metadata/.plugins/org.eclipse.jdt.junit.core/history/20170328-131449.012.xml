@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TaskManagerRunnerClass" project="TaskManager-Tests" tests="3" started="3" failures="0" errors="0" ignored="1">
+  <testsuite name="com.ctli.it.qa.taskmanager.tests.TaskManagerRunnerClass" time="22.235">
+    <testsuite name="Feature: Title of your feature" time="22.235">
+      <testsuite name="Scenario: Title of your scenario" time="22.235" incomplete="true">
+        <skipped/>
+        <testcase name="Given I am logged in as a &quot;TaskManageruser&quot; in the Task Manager Portal" classname="Scenario: Title of your scenario" time="20.999"/>
+        <testcase name="When I click on the Admin under that  fallouts the Fallout page should come" classname="Scenario: Title of your scenario" time="0.007"/>
+        <testcase name="Then I complete action" classname="Scenario: Title of your scenario" time="1.229" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

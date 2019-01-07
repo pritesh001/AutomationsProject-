@@ -1,0 +1,34 @@
+package com.ctli.it.qa.taskmanager.tools.steps.user;
+
+import com.ctli.it.qa.taskmanager.tools.pages.TaskManagerLoginPage;
+import com.ctli.it.qa.taskmanager.tools.steps.TaskManagerSteps;
+
+import net.thucydides.core.annotations.Step;
+
+@SuppressWarnings("serial")
+public class TaskManagerUserSteps extends TaskManagerSteps{
+
+	TaskManagerLoginPage TaskManagerLoginPage;
+	
+	
+	@Step
+	public void is_in_taskmanager_login_page(String url) {
+		 
+		TaskManagerLoginPage.openAt(url);
+		 TaskManagerLoginPage.maximize();
+		
+	}
+
+	@Step
+	public void logs_in_taskamanger_as(String userType) {
+		SDPOrderingOALoginPage.shouldExist(SDPOrderingOALoginPage);
+		SDPOrderingOALoginPage.enterCredentials(userType);
+		SDPOrderingOALoginPage.btn_log_In_To_sdpordering_oa_mode.click();
+		SDPOrderingOAHomePage.shouldExist(SDPOrderingOAHomePage);
+	}
+	
+	
+	
+	
+	
+}

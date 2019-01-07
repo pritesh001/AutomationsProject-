@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.ctli.it.qa</groupId>
+  <artifactId>TaskManager-Tools</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>TaskManager-Tools</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+   <distributionManagement>
+                        <repository>
+                                    <id>nexus_test</id>
+                                    <name>Nexus Repository for QA</name>
+                                    <url>http://lxomavmpc110.qintra.com:8081/nexus/content/repositories/test/</url>
+                        </repository>
+            </distributionManagement>
+ 
+            <dependencies>
+                        <dependency>
+                                    <groupId>com.ctl.it.qa</groupId>
+                                    <artifactId>staf</artifactId>
+                                    <version>1.1.3</version>
+                        </dependency>
+		</dependencies>
+		 <build> 
+		 
+		<resources>
+			<resource>
+				<directory>src/test/resources</directory>
+				<includes>
+					<include>taskmanager.xml</include>
+				</includes>
+			</resource>
+		</resources>
+    </build>  
+</project>

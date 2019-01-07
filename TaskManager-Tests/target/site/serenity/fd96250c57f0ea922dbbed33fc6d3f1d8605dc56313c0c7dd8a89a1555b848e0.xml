@@ -1,0 +1,52 @@
+<acceptance-test-run title="Title of your scenario outline" name="Title of your scenario outline" description="" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="189" timestamp="2017-03-15T19:07:55.613+05:30">
+  <user-story id="title-of-your-feature" name="Title of your feature" path="taskmanager.feature"/>
+  <tags>
+    <tag name="Title of your feature" type="feature"/>
+    <tag name="tag" type="tag"/>
+    <tag name="tag2" type="tag"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>name</header>
+      <header>value</header>
+      <header>status</header>
+    </headers>
+    <rows>
+      <row result="PENDING">
+        <value>name1</value>
+        <value>5</value>
+        <value>success</value>
+      </row>
+      <row result="PENDING">
+        <value>name2</value>
+        <value>7</value>
+        <value>Fail</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {name=name1, value=5, status=success}" result="PENDING">
+    <test-step result="PENDING" duration="1">
+      <description>Given I want to write a step with name1</description>
+    </test-step>
+    <test-step result="PENDING" duration="0">
+      <description>When I check for the 5 in step</description>
+    </test-step>
+    <test-step result="PENDING" duration="1">
+      <description>Then I verify the success in step</description>
+    </test-step>
+  </test-group>
+  <test-group name="[1] {name=name2, value=7, status=Fail}" result="PENDING">
+    <test-step result="PENDING" duration="0">
+      <description>Given I want to write a step with name2</description>
+    </test-step>
+    <test-step result="PENDING" duration="0">
+      <description>When I check for the 7 in step</description>
+    </test-step>
+    <test-step result="PENDING" duration="1">
+      <description>Then I verify the Fail in step</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

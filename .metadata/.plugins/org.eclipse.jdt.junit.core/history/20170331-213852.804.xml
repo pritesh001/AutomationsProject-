@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TaskManagerRunnerClass" project="TaskManager-Tests" tests="4" started="4" failures="0" errors="2" ignored="0">
+  <testsuite name="com.ctli.it.qa.taskmanager.tests.TaskManagerRunnerClass" time="167.008">
+    <testsuite name="Feature: Title of your feature" time="167.008">
+      <testsuite name="Scenario: Title of your scenario" time="167.008" incomplete="true">
+        <error>net.serenitybdd.core.exceptions.SerenityManagedException: Element ddl_focn_claim does not have the option Claim&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at com.ctl.it.qa.staf.AutoPopulate.populateValueIntoElement(AutoPopulate.java:111)&#13;
+	at com.ctl.it.qa.staf.AutoPopulate.populateValues(AutoPopulate.java:46)&#13;
+	at com.ctl.it.qa.staf.Steps.fillFields(Steps.java:132)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$6aed8074.CGLIB$fillFields$38(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$6aed8074$$FastClassByCGLIB$$fb252a3c.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runBaseObjectMethod(StepInterceptor.java:235)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:55)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$6aed8074.fillFields(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps.i_cliam_focn_complete(TaskManagerUserSteps.java:113)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$6aed8074.CGLIB$i_cliam_focn_complete$9(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$6aed8074$$FastClassByCGLIB$$fb252a3c.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)&#13;
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:248)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:123)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$6aed8074.i_cliam_focn_complete(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tests.steps.user.TaskManagerUserStepsDefinition.i_complete_action_for_the_complete_for_the_third_party_with_request_id(TaskManagerUserStepsDefinition.java:63)&#13;
+	at ✽.Then I complete action for the complete for the third party with request id(features/taskmanager.feature:11)&#13;
+&#13;
+</error>
+        <testcase name="Given I am logged in as a &quot;TaskManageruser&quot; in the Task Manager Portal" classname="Scenario: Title of your scenario" time="49.628"/>
+        <testcase name="When I click on the Admin under that  fallouts the Fallout page should come" classname="Scenario: Title of your scenario" time="75.102"/>
+        <testcase name="Then I complete action for the claim for the third party with request id" classname="Scenario: Title of your scenario" time="42.278"/>
+        <testcase name="Then I complete action for the complete for the third party with request id" classname="Scenario: Title of your scenario" time="0.0">
+          <error>net.serenitybdd.core.exceptions.SerenityManagedException: Element ddl_focn_claim does not have the option Claim&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at com.ctl.it.qa.staf.AutoPopulate.populateValueIntoElement(AutoPopulate.java:111)&#13;
+	at com.ctl.it.qa.staf.AutoPopulate.populateValues(AutoPopulate.java:46)&#13;
+	at com.ctl.it.qa.staf.Steps.fillFields(Steps.java:132)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$6aed8074.CGLIB$fillFields$38(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$6aed8074$$FastClassByCGLIB$$fb252a3c.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runBaseObjectMethod(StepInterceptor.java:235)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:55)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$6aed8074.fillFields(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps.i_cliam_focn_complete(TaskManagerUserSteps.java:113)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$6aed8074.CGLIB$i_cliam_focn_complete$9(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$6aed8074$$FastClassByCGLIB$$fb252a3c.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)&#13;
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:248)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:123)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$6aed8074.i_cliam_focn_complete(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tests.steps.user.TaskManagerUserStepsDefinition.i_complete_action_for_the_complete_for_the_third_party_with_request_id(TaskManagerUserStepsDefinition.java:63)&#13;
+	at ✽.Then I complete action for the complete for the third party with request id(features/taskmanager.feature:11)&#13;
+&#13;
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

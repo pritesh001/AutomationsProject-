@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container name="root">
+	<container name="Environments">
+		<container name="ITV1">
+		<field name="tm-url" value="http://ctlcentral-itv.test.qintra.com/portal/site/qcentral/index.jsp?epi-content=LOGIN"></field>
+			<container name="TaskManagerLoginPage">
+		           <container name="TaskManageruser">
+		           <field name="tbx_taskmanager_username" value="slstst5" type="mandatory"></field>
+		           <field name="tbx_taskmanager_password" value="2015Clink" type="mandatory"></field>
+		           </container>
+			
+			
+			<container name="CommonData">
+        <container name="SDPOrderingOrderSummaryEditPage">
+            <container name="SDPOrderingOAOrderInfoPage">
+			<field name="ddl_sales_group_id" value="Fedral - Goverment System Division - GSDGOVT" type="mandatory"></field>
+			<field name="tbx_search_input_text" value="wait-3:123762358" type="mandatory"></field>
+			<field name="btn_search" value="click" type="mandatory"></field>
+			<field name="lnk_search_input_link" value="wait-2:Click" type="mandatory"></field>
+			<field name="tbx_customername" value="wait-2:Saurabh_Automation" type="mandatory"></field>
+			<field name="tbx_ilink_pramata_id" value="wait-2:123" type="mandatory"></field>
+			<field name="tbx_remarks" value="wait-2:CR5997 NS2020 EIS MAY PI0 2017 - Automation" type="mandatory"></field>
+			<field name="btn_create_order" value="click" type="mandatory"></field>
+			
+		
+  </container>
+    </container>
+      </container>
+        </container>
+        
+       
+
+			

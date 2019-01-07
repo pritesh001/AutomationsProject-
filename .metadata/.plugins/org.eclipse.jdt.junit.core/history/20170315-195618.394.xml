@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TaskManagerRunnerClass" project="TaskManager-Tests" tests="3" started="3" failures="0" errors="0" ignored="2">
+  <testsuite name="com.ctli.it.qa.taskmanager.tests.TaskManagerRunnerClass" time="1.481">
+    <testsuite name="Feature: Title of your feature" time="1.481">
+      <testsuite name="Scenario: Title of your scenario" time="1.481" incomplete="true">
+        <skipped/>
+        <testcase name="Given Given I am logged in as a &quot;user&quot; in the Task Manager Portal" classname="Scenario: Title of your scenario" time="0.0"/>
+        <testcase name="When some other precondition" classname="Scenario: Title of your scenario" time="0.0" ignored="true"/>
+        <testcase name="Then I complete action" classname="Scenario: Title of your scenario" time="1.481" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

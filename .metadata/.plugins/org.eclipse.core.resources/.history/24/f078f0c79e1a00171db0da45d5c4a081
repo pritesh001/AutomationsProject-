@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container name="root">
+	<container name="Environments">
+		<container name="ITV1">
+			<field name="tm-url"
+				value="http://ctlcentral-itv.test.qintra.com/portal/site/qcentral/index.jsp?epi-content=LOGIN"></field>
+			<container name="TaskManagerLoginPage">
+				<container name="TaskManageruser">
+					<field name="tbx_taskmanager_username" value="slstst5" type="mandatory"></field>
+					<field name="tbx_taskmanager_password" value="2015Clink"
+						type="mandatory"></field>
+				</container>
+
+			</container>
+
+		</container>
+	</container>
+
+
+	<container name="CommonData">
+		<container name="RequestidFalloutProvider">
+			<container name="RequestidFalloutProviderPage">
+				<field name="tbx_requestid" value="238043095" type="mandatory"></field>
+			</container>
+		</container>
+
+
+
+
+		<container name="TaskManagerEditPage">
+			<container name="TaskManagerEditPageforFOCNclaimcomplete">
+				<field name="cbx_focn_claim" value="ON" type="mandatory"></field>
+				<field name="ddl_focn_claim" value="wait-10:Claim" type="mandatory"></field>
+				<field name="btn_focn_go" value="wait-9:click" type="mandatory"></field>
+				
+			</container>
+			
+			
+			<container name="TaskManagerEditPageforFOCNclaimcomplete2">
+				<field name="cbx_focn_complete" value="ON" type="mandatory"></field>
+				<field name="ddl_focn_complete" value="wait-10:Complete" type="mandatory"></field>
+				<field name="btn_focn_go" value="wait-9:click" type="mandatory"></field>
+				
+			</container>
+			
+			    <container name="TaskManagerEditPageforSOCNclaim">
+			    <field name="cbx_socn_claim" value="ON" type="mandatory"></field>
+				<field name="ddl_socn_claim" value="wait-10:Claim" type="mandatory"></field>
+				<field name="btn_socn_go" value="wait-9:click" type="mandatory"></field>
+				
+			</container>
+			
+			
+			
+			
+		
+		</container>
+
+
+	</container>
+
+
+</container>

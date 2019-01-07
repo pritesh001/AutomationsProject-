@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TaskManagerRunnerClass" project="TaskManager-Tests" tests="3" started="3" failures="0" errors="0" ignored="1">
+  <testsuite name="com.ctli.it.qa.taskmanager.tests.TaskManagerRunnerClass" incomplete="true">
+    <testsuite name="Feature: Title of your feature" incomplete="true">
+      <testsuite name="Scenario: Title of your scenario" incomplete="true">
+        <testcase name="Given I want to &quot;user&quot; a step with precondition" classname="Scenario: Title of your scenario" time="0.0"/>
+        <testcase name="When some other precondition" classname="Scenario: Title of your scenario" time="0.0" ignored="true"/>
+        <testcase name="Then I complete action" classname="Scenario: Title of your scenario" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

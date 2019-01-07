@@ -1,0 +1,17 @@
+package com.ctli.it.qa.taskmanager.tools.pages.common;
+
+import org.openqa.selenium.WebElement;
+
+import com.ctli.it.qa.taskmanager.tools.pages.TaskManagerPage;
+
+import net.serenitybdd.core.pages.WebElementFacade;
+
+public class TaskManagerHomePage extends TaskManagerPage
+
+{
+
+	public WebElementFacade lnk_fallout;
+
+	
+	
+}

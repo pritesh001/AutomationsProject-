@@ -1,0 +1,26 @@
+package com.ctli.it.qa.taskmanager.tools.pages.common;
+
+import com.ctli.it.qa.taskmanager.tools.pages.TaskManagerPage;
+
+public class TaskManagerLoginPage extends TaskManagerPage 
+{
+
+	
+	
+	@Step
+	public void is_in_taskmanager_login_page(String url) {
+		 
+		TaskManagerLoginPage.openAt(url);
+		 TaskManagerLoginPage.maximize();
+		 TaskManagerLoginPage.shouldExist(TaskManagerLoginPage);
+	}
+
+	@Step
+	public void logs_in_taskamanger_as(String userType) {
+		TaskManagerLoginPage.shouldExist(TaskManagerLoginPage);
+		TaskManagerLoginPage.enterCredentials(userType);
+		TaskManagerLoginPage.btn_log_In_To_sdpordering_oa_mode.click();
+		TaskManagerLoginPage.shouldExist(SDPOrderingOAHomePage);
+	}
+	
+}

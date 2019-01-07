@@ -1,0 +1,35 @@
+package com.ctli.it.qa.taskmanager.tests;
+
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
+
+import com.ctl.it.qa.staf.Environment;
+import com.ctl.it.qa.staf.STAFEnvironment;
+import com.ctl.it.qa.staf.Steps;
+import com.ctl.it.qa.staf.TestEnvironment;
+
+import cucumber.api.CucumberOptions;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
+
+@TestEnvironment(Environment.ITV1)
+	@RunWith(CucumberWithSerenity.class)
+	@CucumberOptions(	
+						plugin = {"pretty","html:target/cucumber-html-report"},
+						features="src/test/resources/", 
+						tags={" @tag1" + ""}
+					)
+
+	public class TaskManagerRunnerClass {
+
+		
+		@BeforeClass
+		public static void setEnvironment() 
+		{
+			STAFEnvironment.registerEnvironment(TaskManagerRunnerClass.class);
+			Steps.initialize("");
+		}
+	
+}
+
+
+

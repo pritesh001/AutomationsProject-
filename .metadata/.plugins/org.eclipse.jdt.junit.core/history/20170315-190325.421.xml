@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TaskManagerRunnerClass" project="TaskManager-Tests" tests="6" started="6" failures="0" errors="0" ignored="6">
+  <testsuite name="com.ctli.it.qa.taskmanager.tests.TaskManagerRunnerClass" time="1.908">
+    <testsuite name="Feature: Title of your feature" time="1.908">
+      <testsuite name="Scenario Outline: Title of your scenario outline" time="1.908">
+        <testsuite name="Examples:" time="1.908">
+          <testsuite name="| name1 | 5 | success |" time="0.0" incomplete="true">
+            <skipped/>
+            <testcase name="Given I want to write a step with name1" classname="| name1 | 5 | success |" time="0.0" ignored="true"/>
+            <testcase name="When I check for the 5 in step" classname="| name1 | 5 | success |" time="0.0" ignored="true"/>
+            <testcase name="Then I verify the success in step" classname="| name1 | 5 | success |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| name2 | 7 | Fail |" time="1.904" incomplete="true">
+            <skipped/>
+            <testcase name="Given I want to write a step with name2" classname="| name2 | 7 | Fail |" time="0.0" ignored="true"/>
+            <testcase name="When I check for the 7 in step" classname="| name2 | 7 | Fail |" time="0.0" ignored="true"/>
+            <testcase name="Then I verify the Fail in step" classname="| name2 | 7 | Fail |" time="1.904" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

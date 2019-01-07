@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container name="root">
+	<container name="Environments">
+		<container name="ITV1">
+		          <field name="tm-url" value="http://ctlcentral-itv.test.qintra.com/portal/site/qcentral/index.jsp?epi-content=LOGIN"></field>
+			<container name="TaskManagerLoginPage">
+		           <container name="TaskManageruser">
+		           <field name="tbx_taskmanager_username" value="slstst5" type="mandatory"></field>
+		           <field name="tbx_taskmanager_password" value="2015Clink" type="mandatory"></field>
+		     </container>
+		     
+		     </container>
+
+    </container>  
+     
+		 </container>  
+			<container name="CommonData">
+                 <container name="RequestidFalloutProvider">
+                 <container name="RequestidFalloutProviderPage">
+			     <field name="tbx_requestid" value="238041410" type="mandatory"></field>
+           </container>
+           
+           
+           
+           
+           
+           <container name="ControlCentreHomePage">
+            <container name="ControlCentreInfoDetailPage">
+            <field name="tbx_task_order" value="wait-5:TODD1" type="mandatory"></field>
+            <field name="tbx_Desired_Installation_Date" value="12-23-2016" type="mandatory"></field>
+            <field name="btn_Continue1" value="wait-5:Click" type="mandatory"></field>
+            <field name="btn_Continue2" value="wait-10:Click" type="mandatory"></field>
+            <field name="tbx_Clin" value="clin123" type="mandatory"></field>
+            <field name="tbx_Quality" value="12" type="mandatory"></field>
+            <field name="tbx_agency" value="agency" type="mandatory"></field>
+            <field name="btn_add_Clin" value="wait-5:Click" type="mandatory"></field>
+            <field name="btn_Continue3" value="wait-5:Click" type="mandatory"></field>
+            <field name="tbx_NSC" value="DNVRCOMC" type="mandatory"></field>
+         
+              
+  
+        </container>
+      
+ </container>
+  </container>
+   
+			

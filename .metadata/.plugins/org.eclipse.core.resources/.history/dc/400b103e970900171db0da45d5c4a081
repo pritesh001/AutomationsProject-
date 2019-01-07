@@ -1,0 +1,22 @@
+package com.ctli.it.qa.taskmanager.tools.pages.common;
+
+import com.ctl.it.qa.staf.xml.reader.IntDataContainer;
+import com.ctli.it.qa.taskmanager.tools.pages.TaskManagerPage;
+
+public class TaskManagerLoginPage extends TaskManagerPage 
+
+
+{
+
+	
+	
+	public void enterCredentials(String userType) {
+		IntDataContainer dataContainer = envData.getContainer(
+				this.getClass().getSimpleName()).getContainer(userType);
+		tbx_taskmanager_username.type(dataContainer.getFieldValue("tbx_sdpordering_oa_username"));
+		tbx_sdpordering_oa_password.type(dataContainer.getFieldValue("tbx_sdpordering_oa_password"));
+	
+	
+	
+	
+}

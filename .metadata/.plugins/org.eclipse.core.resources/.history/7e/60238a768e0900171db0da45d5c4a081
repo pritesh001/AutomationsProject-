@@ -1,0 +1,30 @@
+package SDPOrderingOALoginPage;
+
+import com.ctl.it.qa.staf.xml.reader.IntDataContainer;
+import com.ctli.it.qa.taskmanager.tools.pages.TaskManagerPage;
+
+import net.serenitybdd.core.annotations.findby.FindBy;
+import net.serenitybdd.core.pages.WebElementFacade;
+
+public class TaskManagerLoginPage  extends TaskManagerPage 
+
+{
+
+	@FindBy(xpath = "//input[@name='password']")
+	public WebElementFacade  tbx_taskmanager_username;
+	
+	@FindBy(xpath = "//input[@name='password']")
+	public WebElementFacade tbx_taskmanager_password;
+
+
+	public void enterCredentials(String userType) 
+	{
+		IntDataContainer dataContainer = envData.getContainer(
+				this.getClass().getSimpleName()).getContainer(userType);
+		tbx_taskmanager_username.type(dataContainer.getFieldValue("tbx_taskmanager_username"));
+		tbx_taskmanager_password.type(dataContainer.getFieldValue("tbx_taskmanager_password"));
+	}
+
+	
+	
+}

@@ -1,0 +1,8 @@
+package com.ctli.it.qa.taskmanager.tools.steps.user;
+
+import com.ctli.it.qa.taskmanager.tools.steps.TaskManagerSteps;
+
+@SuppressWarnings("serial")
+public class TaskManagerUserSteps extends TaskManagerSteps{
+
+}

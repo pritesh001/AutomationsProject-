@@ -1,0 +1,47 @@
+package com.ctli.it.qa.taskmanager.tools.pages.common;
+
+import com.ctl.it.qa.staf.xml.reader.IntDataContainer;
+import com.ctli.it.qa.taskmanager.tools.pages.TaskManagerPage;
+
+import net.serenitybdd.core.annotations.findby.FindBy;
+import net.serenitybdd.core.pages.WebElementFacade;
+
+public class TaskManagerLoginPage extends TaskManagerPage 
+
+
+{
+
+
+	@FindBy(xpath = "//input[@name='logon']")
+	public WebElementFacade tbx_taskmanager_username;
+
+	@FindBy(xpath = "//input[@name='password']")
+	public WebElementFacade tbx_taskamanegr_password;
+
+	@FindBy(xpath = "html/body/table/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td/form/table/tbody/tr[6]/td/input")
+	public WebElementFacade btn_log_In_To_sdpordering_oa_mode;
+	
+	@Override
+	public WebElementFacade getUniqueElementInPage() {
+		return btn_log_In_To_sdpordering_oa_mode;
+	}
+
+	
+	
+	public void enterCredentials(String userType) 
+	{
+		IntDataContainer dataContainer = envData.getContainer(
+				this.getClass().getSimpleName()).getContainer(userType);
+		tbx_taskmanager_username.type(dataContainer.getFieldValue("tbx_taskmanager_username"));
+		tbx_taskamanegr_password.type(dataContainer.getFieldValue("tbx_taskmanager_password"));
+	
+	
+	}
+	
+	public void clickLogin() {
+		btn_log_In_taskamanager.click();
+	}
+	
+	
+	
+}

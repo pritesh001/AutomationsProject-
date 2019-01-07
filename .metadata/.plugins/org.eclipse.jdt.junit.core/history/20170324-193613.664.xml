@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TaskManagerRunnerClass" project="TaskManager-Tests" tests="3" started="3" failures="0" errors="2" ignored="1">
+  <testsuite name="com.ctli.it.qa.taskmanager.tests.TaskManagerRunnerClass" time="69.233">
+    <testsuite name="Feature: Title of your feature" time="69.233">
+      <testsuite name="Scenario: Title of your scenario" time="67.144" incomplete="true">
+        <error>net.serenitybdd.core.exceptions.SerenityManagedException: Unresolved compilation problem: 
+	RequestidFalloutProviderpage cannot be resolved to a variable
+&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps.i_provide_requestid(TaskManagerUserSteps.java:54)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$aa29908.CGLIB$i_provide_requestid$3(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$aa29908$$FastClassByCGLIB$$a5d331fd.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)&#13;
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:248)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:123)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$aa29908.i_provide_requestid(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tests.steps.user.TaskManagerUserStepsDefinition.i_click_on_the_Admin_under_that_fallouts_the_Fallout_page_should_come(TaskManagerUserStepsDefinition.java:35)&#13;
+	at ✽.When I click on the Admin under that  fallouts the Fallout page should come(features/taskmanager.feature:9)&#13;
+&#13;
+</error>
+        <testcase name="Given I am logged in as a &quot;TaskManageruser&quot; in the Task Manager Portal" classname="Scenario: Title of your scenario" time="67.125"/>
+        <testcase name="When I click on the Admin under that  fallouts the Fallout page should come" classname="Scenario: Title of your scenario" time="0.019">
+          <error>net.serenitybdd.core.exceptions.SerenityManagedException: Unresolved compilation problem: 
+	RequestidFalloutProviderpage cannot be resolved to a variable
+&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps.i_provide_requestid(TaskManagerUserSteps.java:54)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$aa29908.CGLIB$i_provide_requestid$3(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$aa29908$$FastClassByCGLIB$$a5d331fd.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)&#13;
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:248)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:123)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$aa29908.i_provide_requestid(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tests.steps.user.TaskManagerUserStepsDefinition.i_click_on_the_Admin_under_that_fallouts_the_Fallout_page_should_come(TaskManagerUserStepsDefinition.java:35)&#13;
+	at ✽.When I click on the Admin under that  fallouts the Fallout page should come(features/taskmanager.feature:9)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then I complete action" classname="Scenario: Title of your scenario" time="2.08" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

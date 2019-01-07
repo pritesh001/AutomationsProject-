@@ -1,0 +1,300 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title>CTL Central Login</title>
+
+
+
+
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+<style type="text/css">
+&lt;!--
+.blue-link:link,
+.blue-link:active,
+.blue-link:visited { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-style: normal; color: #006699; text-decoration: none }
+.blue-link:hover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-style: normal; color: #006699; text-decoration: underline }
+
+.brown-link:link,
+.brown-link:active,
+.brown-link:visited { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-style: normal; color: #7B7B4F; text-decoration: none }
+.brown-link:hover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-style: normal; color: #7B7B4F; text-decoration: underline }
+
+--&gt;
+.userloginNew{
+background: #a9db80; /* Old browsers */
+background: -moz-linear-gradient(top,  #a9db80 27%, #2b9616 68%, #0f680d 95%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(27%,#a9db80), color-stop(68%,#2b9616), color-stop(95%,#0f680d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #a9db80 27%,#2b9616 68%,#0f680d 95%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #a9db80 27%,#2b9616 68%,#0f680d 95%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #a9db80 27%,#2b9616 68%,#0f680d 95%); /* IE10+ */
+background: linear-gradient(to bottom,  #a9db80 27%,#2b9616 68%,#0f680d 95%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#0f680d',GradientType=0 ); /* IE6-9 */
+}
+
+</style>
+<script language="JavaScript">
+&lt;!--
+
+document.writeln('&lt;LINK REL=STYLESHEET HREF="/stylesheet/QCentral_v2.css" TYPE="text/css"&gt;');
+function bodyload()
+{
+    
+    focustext();
+
+ }
+ 
+ function sfaLoginCheck(){
+ var myurl = window.location.href
+ alert(myurl);
+ if(myurl.indexof("template.ERROR") &gt; -1)
+ {
+   window.location.replace="http://qcentral-int.qintra.com:8003/portal/site/qcentral/index.jsp?epi-content=LOGIN&amp;SFA=ture";
+ }
+ }
+
+function focustext() {
+document.login_form.logon.focus();
+}
+window.onload=bodyload;
+
+
+function toLower(str) {
+    login_form.logon.value = str.toLowerCase();
+    return true;
+}
+
+&lt;!--
+&lt;!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&amp;&amp;(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// --&gt;
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))&gt;0&amp;&amp;parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&amp;&amp;d.all) x=d.all[n]; for (i=0;!x&amp;&amp;i&lt;d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&amp;&amp;d.layers&amp;&amp;i&lt;d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x &amp;&amp; document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_showHideLayers() { //v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i&lt;(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+function popup(mylink, windowname)
+{
+if (! window.focus)return true;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+   
+window.open(href, windowname, 'width=600,height=400,scrollbars=yes');
+
+}
+function popWindow(mypage, myname, w, h, scroll) {
+
+             var winl = (screen.width - w) / 2;
+
+             var wint = (screen.height - h) / 2;
+
+              winprops = 'height='+h+',width='+w+',top='+wint+',left='+winl+',scrollbars='+scroll+',resizable';
+alert('mypage '+mypage);
+alert('mypage.href = '+mypage.href);
+alert('myname = '+myname);
+var href;
+if (typeof(mypage) == 'string')
+   href=mypage;
+else
+   href=mypage.href;
+
+              win = window.open(href, myname );
+
+}
+
+//--&gt;
+//--&gt;
+</script><link type="text/css" href="/stylesheet/QCentral_v2.css" rel="STYLESHEET" />
+
+</head>
+
+
+<body bgcolor="#FFFFFF" text="#000000" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+
+<table cellspacing="0" cellpadding="0" border="0" width="70%">
+  <tbody><tr>
+    <td>
+      <table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%">
+   <!--     <tr>
+          <td bgcolor="#054F7E" height="2"><img src="/portal/templates/template0014/SeVWTeTTffQacUZTYWeaZUYVaYXcQQaQ/blank.gif" width="250" height="10"></td>
+          <td bgcolor="#399cce" height="2"><img src="/portal/templates/template0014/SeVWTeTTffQacUZTYWeaZUYVaYXcQQaQ/blank.gif" width="250" height="10"></td>
+          <td bgcolor="#AFE3FD" height="2"><img src="/portal/templates/template0014/SeVWTeTTffQacUZTYWeaZUYVaYXcQQaQ/blank.gif" width="250" height="10"></td>
+        </tr>
+	-->
+        <tbody><tr>
+          <td align="left" width="100%" valign="top" height="100%" colspan="2">
+            
+             
+                
+                <table cellspacing="20" cellpadding="10" border="0" align="center" width="90%">
+                 <tbody><tr> 
+                <td><img width="221" height="45" src="/portal/templates/template0014/SeVWTeTTffQacUZTYWeaZUYVaYXcQQaQ/logo.gif" /></td>
+                </tr>
+                
+             
+              
+          	  
+			     
+<tr>  
+                <td align="left" valign="top"> 
+                  <table cellspacing="0" cellpadding="0" border="1" width="100%">
+                    <tbody><tr> 
+                      <td> 
+                        <table cellspacing="0" cellpadding="4" border="0" width="100%">
+                          <tbody><tr> 
+                            <td align="center"><font size="1" color="#FF0000" face="Arial, Helvetica, sans-serif"><font size="2"><b>** 
+                              </b></font></font><b><font size="2" face="Arial, Helvetica, sans-serif">****Important Compliance Notice****</font><font size="2" color="#FF0000" face="Arial, Helvetica, sans-serif"> 
+                              **</font></b></td>
+                          </tr>
+                            <tr> 
+                            <td><font size="1" face="Arial, Helvetica, sans-serif">All users are personally responsible for adherence to the compliance rules associated with the access and use of this database.  Employees must understand and follow the CPNI rules as well as the use of carrier/wholesale information. For additional information, please refer to your Customer Proprietary Network Information (CPNI), Privacy of Customer and Carrier Information training or contact the Legal/Privacy Organization.</font></td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                                <b><font size="2" color="#FF0000" face="Arial, Helvetica, sans-serif">*** Important Notice ***</font>
+                            </b></td>
+                           </tr>
+                           <tr>
+                            <td>
+                                <b><font size="1" face="Arial, Helvetica, sans-serif">Company Profiles under 'Selling -&gt; Company Profiles' in QCentral is retiring on 2/14/2015.<br /> Kindly use Sales Force to create profiles. </font>
+                            </b></td>
+                           </tr>
+                        </tbody></table>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+            <p> </p>
+            <p> </p>
+          </td>
+          
+          
+                                                                                                                                                                                                                                
+
+  		 
+  		 
+   		<td bgcolor="#f3f4ec" align="left" valign="top" height="100%">
+   		
+		<table cellspacing="10" cellpadding="0" border="0" width="100%">
+           <tbody><tr>
+                <td bgcolor="#f3f4ec">
+                
+		  	    <form method="post" action="/portal/site/qcentral/index.jsp?epi-content=LOGIN&amp;epi-process=process_login.jsp;jsessionid=Mt5GYKCBscQhhvbkQr22TQGV1CwHpXvzpwyxNRp3GszQbhczJsFG!2008322390!2101403117" name="login_form">
+		        
+                    <input type="hidden" checked="checked" value="TRUE" id="checkbox" name="futurevisits" />
+                    <table cellspacing="0" cellpadding="2" border="0" width="100%">
+                      <tbody><tr>
+					  <td align="center" class="userloginNew" colspan="2"><font size="4" color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif">USER LOGIN</font></td>
+					  </tr>
+                      <!-- display user name  -->
+					  <tr><td> </td></tr>
+                      <tr>
+                        <td align="left" nowrap="nowrap"><font size="1" color="#7b7b4f" face="Verdana, Arial, Helvetica, sans-serif" style="font: bold;">
+						 User Name (CUID):</font></td>
+                        <td align="right" valign="bottom"> <font size="2" face="Arial, Helvetica, sans-serif">
+                          <input type="text" name="logon" value="" size="19" />
+                          </font></td>
+                      </tr>
+                      <!-- display password  -->
+                      <tr>
+                        <td align="left" nowrap="nowrap"><font size="1" color="#7b7b4f" face="Verdana, Arial, Helvetica, sans-serif" style="font: bold;">
+						 Password (AD/LDAP):</font></td>
+                        <td align="right" valign="bottom"> <font size="2" face="Arial, Helvetica, sans-serif">
+                          <input type="password" name="password" value="" size="20" />
+                          </font></td>
+                      </tr>
+                      <tr>
+		      		<td class="smallTypeText1" colspan="3"><b><font color="#00853F"></font></b></td>
+	              </tr>
+                      <!-- display Retrieve Forgotten Password if this site supports -->
+                      <!-- display realm  -->
+                      <input type="hidden" value="sql" name="realm" />
+				  
+                      <input type="hidden" value="" name="sfalogin" />
+                      <!-- display Future Visits  -->
+                      <!-- <tr>
+           			  <td align="left" nowrap>Future Visits: &nbsp;&nbsp;</td>
+           			  <td align="left" nowrap><input type="checkbox" name="futurevisits" id="checkbox" value="TRUE" /></td>
+           			  <td align="left" nowrap width="100%" class="epi-fontSm">Automatically log me in</td>
+        			  </tr> -->
+                      <!-- display Login button  -->
+					  
+                      <tr>
+                        <td align="right" valign="center" nowrap="nowrap" class="smallTypeText" colspan="2">
+                          <input width="60" type="image" height="25" src="/login.jpg" onclick=" return toLower(login_form.logon.value);" value="Login" name="Submit223" />
+                          </td>
+                      </tr>
+                    </tbody></table>
+			</form>
+			
+			
+                </td>
+             </tr> 
+          
+              <tr><td>
+                  <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tbody><tr>
+                      <td bgcolor="#F3F4EC" align="left" width="14" valign="top"><img width="14" height="71" src="/images/help.gif" /></td>
+                      <td bgcolor="#F3F4EC" align="left" valign="top">
+                        <table cellspacing="0" cellpadding="8" border="0" width="100%">
+                          <tbody><tr>
+                            <td>
+                              <p><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><b><font color="7B7B4F"><a target="_blank" class="brown-link" href="http://emd.uswc.uswest.com/emd">Don't
+                                know your CUID?</a></font></b></font></p>
+                              <p><font color="7B7B4F"><b><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><a target="_blank" class="brown-link" href="http://ecom.uswc.uswest.com/nmreset/pw2.html">Don't 
+                                know your LDAP Password?</a></font></b></font></p>
+                              <p><b><font size="1" color="7B7B4F" face="Verdana, Arial, Helvetica, sans-serif"><a class="brown-link" href="javascript:window.external.AddFavorite ('http://qwestcentral.qwest.net', 'CTL.Central Login Page')">Add 
+                                CTL.Central to your Favorites</a></font></b></p>
+                              <p><font color="7B7B4F"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">CTL.Central BMG Help Desk<br />
+                                1.888.888.7998 (Option 2)<br />
+                                <a class="brown-link" href="mailto:qcentralhelpdesk@centurylink.com">QcentralHelpdesk@centurylink.com</a> 
+                                </font></font></p><p><font color="7B7B4F"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">CTL.Central Wholesale Users<br />
+                                1.877.828.HELP (4357)<br />
+                                <a class="brown-link" href="https://qtomanetac27.ad.qintra.com/ohd/">IT Help Desk</a> 
+                                </font></font></p>
+                              <p><font size="1" color="7B7B4F" face="Verdana, Arial, Helvetica, sans-serif">CTL.Central 
+                                is designed to work with IE 8 <a class="brown-link" target="_blank" href="http://qsi.qintra.com/Product/Microsoft/Internet%20Explorer/Internet%20Explorer.qsi"><b>Click 
+                                Here</b></a> to upgrade.</font></p>
+                            </td>
+                          </tr>
+                        </tbody></table>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+            <p> </p>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+
+
+
+
+</body><canvas id="fxdriver-screenshot-canvas" style="display: none;" width="1366" height="657"></canvas></html>

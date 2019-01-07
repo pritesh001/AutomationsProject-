@@ -1,0 +1,142 @@
+package com.ctli.it.qa.taskmanager.tools.steps.user;
+
+import org.openqa.selenium.interactions.Actions;
+
+import com.ctl.it.qa.staf.xml.reader.IntDataContainer;
+import com.ctli.it.qa.taskmanager.tools.pages.common.RequestidFalloutProvider;
+import com.ctli.it.qa.taskmanager.tools.steps.TaskManagerSteps;
+
+import net.thucydides.core.annotations.Step;
+import org.openqa.selenium.Keys;
+
+@SuppressWarnings("serial")
+public class TaskManagerUserSteps extends TaskManagerSteps{
+
+	com.ctli.it.qa.taskmanager.tools.pages.common.TaskManagerLoginPage TaskManagerLoginPage;
+	
+	com.ctli.it.qa.taskmanager.tools.pages.common.TaskManagerHomePage  TaskManagerHomePage ;
+	RequestidFalloutProvider RequestidFalloutProvider ;
+	
+	com.ctli.it.qa.taskmanager.tools.pages.common.TaskManagerEditPage  TaskManagerEditPage ;
+	
+	@Step
+	public void is_in_taskmanager_login_page(String url) {
+		 
+		TaskManagerLoginPage.openAt(url);
+		 TaskManagerLoginPage.maximize();
+		// TaskManagerLoginPage.shouldExist(TaskManagerLoginPage);
+	}
+
+	@Step
+	public void logs_in_taskamanger_as(String userType)
+	{
+		TaskManagerLoginPage.enterCredentials(userType);
+		TaskManagerLoginPage.btn_log_In_taskamanager.click();
+		
+	}
+
+	
+	@Step
+	public void i_click_on_fallouts() throws InterruptedException 
+	
+	{
+			Actions a = new Actions(getDriver());
+			a.moveToElement(TaskManagerHomePage.lnk_admin).perform();
+			Thread.sleep(100);
+			a.moveToElement(TaskManagerHomePage.lnk_fallout) .click().perform();
+			Thread.sleep(10000);
+		}
+
+	public void i_provide_requestid() 
+	
+	{
+		
+
+		IntDataContainer dat = get_data_for_page(RequestidFalloutProvider).getContainer("RequestidFalloutProviderPage");
+		fillFields(RequestidFalloutProvider,dat.getMandatoryFields());
+		  
+	
+	}
+
+	public void i_clear_out_remaining_fields() throws InterruptedException 
+	
+	{
+		
+		TaskManagerEditPage.ddl_status.selectByIndex(0);
+		Thread.sleep(1000);
+		TaskManagerEditPage.ddl_Advisory.selectByIndex(1);
+		Thread.sleep(1000);
+		//TaskManagerEditPage.ddl_Requestid_type.selectByIndex(1);
+		TaskManagerEditPage.tbx_from_date.sendKeys(Keys.chord(Keys.CONTROL,"a")," "); 
+		Thread.sleep(1000);
+		TaskManagerEditPage.tbx_to_date.sendKeys(Keys.chord(Keys.CONTROL,"a")," "); 
+		Thread.sleep(1000);
+		TaskManagerEditPage.ddl_Assignee.selectByIndex(1);
+		Thread.sleep(1000);
+		TaskManagerEditPage.search.click();
+		Thread.sleep(10000);
+		
+	}
+
+	public void i_click_on_WorkGroupTasks() throws InterruptedException
+	
+	{
+		
+		TaskManagerEditPage.search1.click();
+		Thread.sleep(10000);
+
+		
+	}
+
+	public void i_cliam_focn() throws InterruptedException 
+	
+	
+	{
+		
+		
+		IntDataContainer dat = get_data_for_page(TaskManagerEditPage).getContainer("TaskManagerEditPageforFOCNclaimcomplete");
+		fillFields(TaskManagerEditPage,dat.getMandatoryFields());
+		Thread.sleep(50000);
+		
+		
+		
+		
+		//TaskManagerEditPage.cbx_focn_claim.click();
+        
+		
+	}
+
+	public void i_cliam_focn_complete() throws InterruptedException 
+	
+	{
+		IntDataContainer dat = get_data_for_page(TaskManagerEditPage).getContainer("TaskManagerEditPageforFOCNclaimcomplete2");
+		fillFields(TaskManagerEditPage,dat.getMandatoryFields());
+		Thread.sleep(50000);
+		
+	}
+
+	public void i_click_on_mytask() throws InterruptedException
+	
+	{
+
+		TaskManagerEditPage.search2.click();
+		Thread.sleep(10000);
+	}
+
+	public void i_click_search3() throws InterruptedException 
+	{
+		TaskManagerEditPage.search3.click();
+		Thread.sleep(10000);
+		
+	}
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+

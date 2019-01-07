@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TaskManagerRunnerClass" project="TaskManager-Tests" tests="7" started="7" failures="0" errors="2" ignored="1">
+  <testsuite name="com.ctli.it.qa.taskmanager.tests.TaskManagerRunnerClass" time="449.71">
+    <testsuite name="Feature: Title of your feature" time="449.71">
+      <testsuite name="Scenario: Title of your scenario" time="446.267" incomplete="true">
+        <error>net.serenitybdd.core.exceptions.SerenityManagedException: NoSuchElementException thrown on element cbx_socn_complete while setting its value to ON. Hence failing the test&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at com.ctl.it.qa.staf.AutoPopulate.populateValueIntoElement(AutoPopulate.java:150)&#13;
+	at com.ctl.it.qa.staf.AutoPopulate.populateValueIntoElement(AutoPopulate.java:146)&#13;
+	at com.ctl.it.qa.staf.AutoPopulate.populateValueIntoElement(AutoPopulate.java:146)&#13;
+	at com.ctl.it.qa.staf.AutoPopulate.populateValues(AutoPopulate.java:46)&#13;
+	at com.ctl.it.qa.staf.Steps.fillFields(Steps.java:132)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$9b35d892.CGLIB$fillFields$21(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$9b35d892$$FastClassByCGLIB$$fda6af5.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runBaseObjectMethod(StepInterceptor.java:235)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:55)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$9b35d892.fillFields(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps.i_cliam_socn_complete(TaskManagerUserSteps.java:183)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$9b35d892.CGLIB$i_cliam_socn_complete$15(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$9b35d892$$FastClassByCGLIB$$fda6af5.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)&#13;
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:248)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:123)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$9b35d892.i_cliam_socn_complete(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tests.steps.user.TaskManagerUserStepsDefinition.i_complete_action_for_the_socn_complete_for_the_third_party_with_request_id(TaskManagerUserStepsDefinition.java:95)&#13;
+	at ✽.Then I complete action for the socn complete  for the third party with request id(features/taskmanager.feature:13)&#13;
+&#13;
+</error>
+        <testcase name="Given I am logged in as a &quot;TaskManageruser&quot; in the Task Manager Portal" classname="Scenario: Title of your scenario" time="49.732"/>
+        <testcase name="When I click on the Admin under that  fallouts the Fallout page should come" classname="Scenario: Title of your scenario" time="75.136"/>
+        <testcase name="Then I complete action for the claim for the third party with request id" classname="Scenario: Title of your scenario" time="134.926"/>
+        <testcase name="Then I complete action for the complete for the third party with request id" classname="Scenario: Title of your scenario" time="131.249"/>
+        <testcase name="Then I complete action for the socn claim  for the third party with request id" classname="Scenario: Title of your scenario" time="55.22"/>
+        <testcase name="Then I complete action for the socn complete  for the third party with request id" classname="Scenario: Title of your scenario" time="0.003">
+          <error>net.serenitybdd.core.exceptions.SerenityManagedException: NoSuchElementException thrown on element cbx_socn_complete while setting its value to ON. Hence failing the test&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at com.ctl.it.qa.staf.AutoPopulate.populateValueIntoElement(AutoPopulate.java:150)&#13;
+	at com.ctl.it.qa.staf.AutoPopulate.populateValueIntoElement(AutoPopulate.java:146)&#13;
+	at com.ctl.it.qa.staf.AutoPopulate.populateValueIntoElement(AutoPopulate.java:146)&#13;
+	at com.ctl.it.qa.staf.AutoPopulate.populateValues(AutoPopulate.java:46)&#13;
+	at com.ctl.it.qa.staf.Steps.fillFields(Steps.java:132)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$9b35d892.CGLIB$fillFields$21(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$9b35d892$$FastClassByCGLIB$$fda6af5.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runBaseObjectMethod(StepInterceptor.java:235)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:55)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$9b35d892.fillFields(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps.i_cliam_socn_complete(TaskManagerUserSteps.java:183)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$9b35d892.CGLIB$i_cliam_socn_complete$15(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$9b35d892$$FastClassByCGLIB$$fda6af5.invoke(&lt;generated&gt;)&#13;
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)&#13;
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)&#13;
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)&#13;
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:248)&#13;
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:123)&#13;
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)&#13;
+	at com.ctli.it.qa.taskmanager.tools.steps.user.TaskManagerUserSteps$$EnhancerByCGLIB$$9b35d892.i_cliam_socn_complete(&lt;generated&gt;)&#13;
+	at com.ctli.it.qa.taskmanager.tests.steps.user.TaskManagerUserStepsDefinition.i_complete_action_for_the_socn_complete_for_the_third_party_with_request_id(TaskManagerUserStepsDefinition.java:95)&#13;
+	at ✽.Then I complete action for the socn complete  for the third party with request id(features/taskmanager.feature:13)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then I see the final status completed for both socn and focn" classname="Scenario: Title of your scenario" time="3.373" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

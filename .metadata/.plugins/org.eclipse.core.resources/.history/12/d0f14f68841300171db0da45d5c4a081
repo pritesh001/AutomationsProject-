@@ -1,0 +1,78 @@
+package com.ctli.it.qa.taskmanager.tools.steps.user;
+
+import org.openqa.selenium.interactions.Actions;
+
+import com.ctl.it.qa.staf.xml.reader.IntDataContainer;
+import com.ctli.it.qa.taskmanager.tools.pages.common.RequestidFalloutProvider;
+import com.ctli.it.qa.taskmanager.tools.steps.TaskManagerSteps;
+
+import net.thucydides.core.annotations.Step;
+
+@SuppressWarnings("serial")
+public class TaskManagerUserSteps extends TaskManagerSteps{
+
+	com.ctli.it.qa.taskmanager.tools.pages.common.TaskManagerLoginPage TaskManagerLoginPage;
+	
+	com.ctli.it.qa.taskmanager.tools.pages.common.TaskManagerHomePage  TaskManagerHomePage ;
+	RequestidFalloutProvider RequestidFalloutProvider ;
+	
+	com.ctli.it.qa.taskmanager.tools.pages.common.TaskManagerEditPage  TaskManagerEditPage ;
+	
+	@Step
+	public void is_in_taskmanager_login_page(String url) {
+		 
+		TaskManagerLoginPage.openAt(url);
+		 TaskManagerLoginPage.maximize();
+		// TaskManagerLoginPage.shouldExist(TaskManagerLoginPage);
+	}
+
+	@Step
+	public void logs_in_taskamanger_as(String userType) {
+		//TaskManagerLoginPage.shouldExist(TaskManagerLoginPage);
+		TaskManagerLoginPage.enterCredentials(userType);
+		TaskManagerLoginPage.btn_log_In_taskamanager.click();
+		//TaskManagerHomePage.shouldExist(TaskManagerHomePage);
+	}
+
+	
+	@Step
+	public void i_click_on_fallouts() throws InterruptedException 
+	
+	{
+			Actions a = new Actions(getDriver());
+			a.moveToElement(TaskManagerHomePage.lnk_admin).perform();
+			Thread.sleep(100);
+			a.moveToElement(TaskManagerHomePage.lnk_fallout) .click().perform();
+			Thread.sleep(10000);
+		}
+
+	public void i_provide_requestid() 
+	
+	{
+		
+
+		IntDataContainer dat = get_data_for_page(RequestidFalloutProvider).getContainer("RequestidFalloutProviderPage");
+		fillFields(RequestidFalloutProvider,dat.getMandatoryFields());
+		
+	
+	}
+
+	public void i_clear_out_remaining_fields() 
+	
+	{
+		
+		
+		
+		
+	}
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+

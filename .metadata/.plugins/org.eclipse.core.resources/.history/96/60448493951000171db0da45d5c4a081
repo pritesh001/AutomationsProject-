@@ -1,0 +1,10 @@
+package com.ctli.it.qa.taskmanager.tools.pages.common;
+
+public class RequestidFalloutProvider {
+	
+	
+	
+	@FindBy(xpath="html/body/div[1]/div[2]/form[2]/div[3]/div[6]/table[2]/tbody/tr[3]/td/div/table/tbody/tr[1]/td[3]/input[2]")
+	public WebElementFacade tbx_tbx_requestid;
+
+}

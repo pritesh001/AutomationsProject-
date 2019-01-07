@@ -1,0 +1,23 @@
+package com.ctli.it.qa.taskmanager.tests;
+
+	@TestEnvironment(Environment.ITV1)
+	@RunWith(CucumberWithSerenity.class)
+	@CucumberOptions(	
+						plugin = {"pretty","html:target/cucumber-html-report"},
+						features="src/test/resources/feature", 
+						tags={"@tag1" + ""}
+					)
+
+	public class TaskManagerRunnerClass {
+
+		
+		@BeforeClass
+		public static void setEnvironment() 
+		{
+			STAFEnvironment.registerEnvironment(TaskManagerRunner.class);
+			Steps.initialize("taskmanager.xml");
+		}
+	}
+
+
+}
